@@ -1,0 +1,10 @@
+interval: 1800
+query: "nature"
+categories: "100"
+purity: "100"
+ratios: "16x9"
+atleast: "3840x2160"
+sorting: "random"
+download_dir: "~/.local/share/random-wallpapers"
+history_size: 30
+max_files: 20
