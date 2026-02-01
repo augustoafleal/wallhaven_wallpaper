@@ -231,6 +231,22 @@ Verify:
 systemctl --user list-timers
 ```
 
+### 5. Stop and remove the service
+
+Stop and disable the timer:
+
+```shell
+systemctl --user disable --now wallhaven-wallpaper.timer
+```
+
+If you want to remove the unit files entirely:
+
+```shell
+rm ~/.config/systemd/user/wallhaven-wallpaper.service
+rm ~/.config/systemd/user/wallhaven-wallpaper.timer
+systemctl --user daemon-reload
+```
+
 ## Logs
 
 Follow service logs:
@@ -238,8 +254,6 @@ Follow service logs:
 ```shell
 journalctl --user -u wallhaven-wallpaper.service -f
 ```
-
----
 
 ## Manual Refresh (Skip)
 

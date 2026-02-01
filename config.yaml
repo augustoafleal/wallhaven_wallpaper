@@ -1,5 +1,5 @@
 interval: 1800
-query: "nature"
+query: "+nature +outdoors +landscape"
 categories: "100"
 purity: "100"
 ratios: "16x9"
